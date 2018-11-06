@@ -1,33 +1,26 @@
-var nama ='Aslan';
-var peran ='Ksatria';
-var umur = 17;
+var nama = 'Irsan';
+var peran = 'Ksatria';
+var umur = 25;
 
-if (umur < 10 ) {
-  console.log("Maaf ya adek !! Game tidak diperkenankan di bawah umur");
-}  
- if ( umur >= 35){
-   console.log("Maaf Gan !! Khusus Anak Pemuda ini cuy");
- }
-else {
-  console.log("SELAMAT DATANG DI GAME" + nama );
-}
-if (nama) {
-  console.log("Hallo" + nama);
-} else {
-  console.log("Tolong diisi Nickname");
-}
- 
-
-if(peran === 'Ksatria') {
-  console.log('Selamat datang di Dunia Proxytia, ' + nama );
-  console.log('Halo Ksatria ' + nama + ', kamu dapat menyerang dengan senjatamu!');
-} else if( peran === 'Tabib') {
-  console.log('Selamat datang di Dunia Proxytia, ' + nama
-  );
-  console.log('Halo Tabib ' + nama + ', kamu akan membantu temanmu yang terluka.');
-} else if(peran === 'Penyihir') {
-  console.log('Selamat datang di Dunia Proxytia, ' + nama );
-  console.log('Halo Penyihir ' + nama + ', ciptakan keajaiban yang membantu kemenanganmu!');
-} else {
-  console.log('Halo ' + nama + ', Pilih peranmu untuk memulai game!');
+if (umur < 10) {
+  console.log("Maaf ya adik, kamu tidak mencukupi umur");
+}else {
+  if (umur <= 35) {
+    if (nama !== '') {
+      console.log("Selamat datang di Dunia Proxytia " + nama);
+      if (peran === 'Ksatria') {
+        console.log('Hallo Ksatria ' + nama + ' Kamu dapat menyerang dengan senjatamu!');
+      }else if(peran === 'Tabib') {
+      console.log('Hallo  Tabib' + nama + 'kamu akan membantu temanmu yang terluka.');
+    }else if(peran === 'Penyihir') {
+      console.log('Hallo  Penyihir' + nama + 'ciptakan keajaiban yang membantu kemenanganmu!');
+    }else {
+      console.log('Pilih peranmu untuk memulai game!');
+    }
+    }else {
+      console.log("Maaf Gan nama jangan kosong");
+    }
+  }else {
+   console.log("Maaf Gan Ini Game untuk yang muda"); 
+  }
 }
