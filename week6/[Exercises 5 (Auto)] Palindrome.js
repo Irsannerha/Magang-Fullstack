@@ -1,7 +1,8 @@
 function palindrome(kata) {
   // you can only write your code here!
   var hasil='';
-  for(var i=kata.length-1;i>=0;i--){
+  // Function tersebut akan mengembalikan nilai true jika kata merupakan palindrome, dan false jika bukan.
+  for(var i=kata.length-1;i>=0;i--){ 
     hasil+=kata[i]
   }
   if(kata===hasil){
