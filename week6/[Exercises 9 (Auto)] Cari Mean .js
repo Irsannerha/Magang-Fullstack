@@ -2,7 +2,9 @@ function cariMean(arr) {
   // you can only write your code here!
   var totalArr = 0;
   for (i = 0; i < arr.length; i++){
+    //var totalArr='' ;
     totalArr+= Arr[i];
+    //console.log(totalArr, arr.length);
   }
   if(arr.length<5){
     mean=Math.floor(totalArr/arr.length);
