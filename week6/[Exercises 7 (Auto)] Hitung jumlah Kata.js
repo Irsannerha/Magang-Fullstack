@@ -1,6 +1,6 @@
 function hitungJumlahKata(kalimat) {
   // you can only write your code here!
-  return kalimat.split(" ").length
+  return kalimat.split(" ").length // Function akan mengembalikan jumlah kata dari kalimat tersebut. Contoh, "I have a dream" akan menghasilkan nilai 4, karena memiliki 4 kata.
 }
 
 // TEST CASES
