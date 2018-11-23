@@ -1,12 +1,12 @@
 function perkalianUnik(arr) {
   // you can only write your code here!
    var ca= [];
-  for (var a=0; a < arr.length;a++) {
-    var ar=1;
-    for(var b=0; b < arr.length;b++){
-      if(a !== b){
-        ar *= arr[b];
-      }
+  for (var a=0; a < arr.length;a++) { // outputnya looping 2, 4, 6
+    var ar=1; 
+    for(var b=0; b < arr.length;b++){ // outputnya looping 2, 4, 6
+      if(a !== b){ // jika a tidak sama dengan b
+        ar *= arr[b]; // maka ar = ar * arr[b] | arr[b] adalah 2, 4, 6
+      } 
     }
     ca.push(ar);
   }
