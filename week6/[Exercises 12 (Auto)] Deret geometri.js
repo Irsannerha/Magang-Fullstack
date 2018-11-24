@@ -1,9 +1,12 @@
 function tentukanDeretGeometri(arr) {
   // you can only write your code here!
+  // DeretGeometri(arr) yang menerima satu parameter berupa array yang terdiri dari angka. 
+  // Function tersebut akan mengembalikan true jika array dari parameter tersebut merupakan deret geometri. 
   var x = arr.length -1;
   if(arr[1] / arr[0] === arr[x] / arr[x -1]) {
     return true
-  }
+  } //  Contoh, [1, 3, 9, 27, 81] adalah deret aritmatika dengan pertambahan nilai sebesar pengalian 3, 
+    // dan [1, 3, 9, 27, 48] bukanlah deret aritmatika karena tidak perbedaan selisih antar angka yang tidak konsisten secara perkalian (27 * 3 bukanlah 48!).
   return false
 }
 
