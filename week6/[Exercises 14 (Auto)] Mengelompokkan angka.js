@@ -2,10 +2,13 @@ function mengelompokkanAngka(arr) {
   // you can only write your code here!
   var tampung = [ [], [], [], ];
   for(var i = 0; i < arr.length; i++) {
+    // kelipatan 3
     if(arr[i] % 3 === 0) {
       tampung[2].push(arr[i])
+      // ganjil
     } else if(arr[i] % 2 === 0) {
       tampung[0].push(arr[i])
+      // genap
     } else {
       tampung[1].push(arr[i])
     }
