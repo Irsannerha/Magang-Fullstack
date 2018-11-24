@@ -3,10 +3,10 @@ function targetTerdekat(arr) {
   var indexO = arr.indexOf("o")
   var jarak = 0
   var jarakTerdekat = arr.length
-
+//function targetTerdekat(arr) yang menerima satu parameter berupa array yang terdiri dari karakter.
   if (arr.indexOf("x") === -1) {
     return 0
-  }
+  } // Function akan me-return jarak spasi antar karakter 'o' dengan karakter 'x' yang terdekat.
   for (var i = 0; i < arr.length; i++){
     if(arr[i] === "x") {
       jarak = Math.abs(i -indexO)
@@ -15,8 +15,8 @@ function targetTerdekat(arr) {
       }
     }
   }
-  return jarakTerdekat
-}
+  return jarakTerdekat // Contoh, jika arr adalah ['x', ' ', 'o', ' ', ' ', 'x'], maka jarak terdekat dari 'o' ke 'x' adalah 2.
+}                      // Jika tidak ditemukan 'x' sama sekali, function akan me-return nilai 0.
 
 // TEST CASES
 console.log(targetTerdekat([' ', ' ', 'o', ' ', ' ', 'x', ' ', 'x'])); // 3
